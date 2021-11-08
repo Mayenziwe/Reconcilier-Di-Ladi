@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/customer_info/cinfo.css">
+    <link rel="stylesheet" href="/css/all.css" />
+    <title>Customer Information</title>
+  </head>
+  <body>
+    <section class="menustuff">
+      <div class="topbar">
+        <span class="tbname">Réconcilier Di Ladi.</span>
+        <div class="menbtn"><i class="fas fa-bars"></i></div>
+      </div>
+      <div class="dropmenu" id="drpmenu">
+      <!-- <img src="/images/menu2img.png" alt="" class="drmenuimg"> -->
+      <div class="dplinc">
+        <a href="/index.html" class="dplinca" onclick="mbtnevclo()">Home</a>
+        <a href="/services_folder/service.html" class="dplinca"onclick="mbtnevclo()" >Services</a>
+        <a href="/services_folder/servbk/srvbk.html" class="dplinca"onclick="mbtnevclo()" >Virtual Appointment</a>
+        <a href="/index.html#top-deals" class="dplinca"onclick="mbtnevclo()" >Shop</a>
+        <a href="" class="dplinca" onclick="mbtnevclo()">About</a>
+        <a href="" class="dplinca"onclick="mbtnevclo()">Contact Us</a>
+      </div>
+    </div>
+    </section>
+    <section class="container" onclick="mbtnevclo()">
+      <img src="/images/custinfoimg.png" alt="" class="custimg"/>
+      <form id="myform">
+<div>
+  
+    <h1>Client Information</h1>
+</div>
+<div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name"  required>
+</div>
+<div class="form-group">
+    <label>Surname</label>
+    <input type="text" name="surname" id="surname" placeholder="Enter your surname" required>
+</div>
+<div class="form-group">
+    <label>Email</label>
+    <input type="text" name="email" id="email" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+    <label>Phone</label>
+    <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
+</div>
+</form>
+<form>
+<div>
+   <h1>Delivery Information</h1>
+</div>
+<div class="form-group">
+    <label>Address</label>
+    <input type="text" name="address" id="address" placeholder="Address" required>
+</div>
+<div class="form-group">
+    <label>Suburb</label>
+    <input type="text" name="suburb" id="suburb" placeholder="Suburb" value="" required>
+</div>
+<div class="form-group">
+    <label>City</label>
+    <input type="text" name="city" id="city" placeholder="City" value="" required>
+</div>
+<div class="form-group">
+    <label>Province</label>
+    <input type="text" name="province" id="province" placeholder="Province" value="" required>
+</div>
+<div class="form-group">
+    <label>Phone</label>
+    <input type="number" name="phone2" id="phone2" placeholder="Phone number" value="" required>
+</div>
+</form>
+<a href="/confpaym/payments.html" class="tpo">Proceed</a>
+      <footer>
+        <span>copyright &copy;2021 Reconcilier di Ladi</span>
+        <span class="span3">Built by<span class="indi">Akreczent</span></span>
+      </footer>
+    </section>
+    <!-- <script src="/sending2trolley.js"></script>
+    <script src="/trolley_folder/trolley.js"></script> -->
+    <script src="/customer_info/cinfo.js"></script>
+  </body>
+</html>

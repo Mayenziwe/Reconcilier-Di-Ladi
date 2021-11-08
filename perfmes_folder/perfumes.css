@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mitr:wght@300&family=Roboto&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Cedarville Cursive', cursive;
+    color: #000;
+}
+.menustuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*top bar start*/
+.topbar{
+    z-index: 23;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: rgba(245, 131, 131,0.5);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .tbname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.topbar .menbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: ease-in-out;
+    transition: 0.6s;
+}
+/*--Menu Styling Start--*/
+.menustuff .dropmenu{
+    visibility: hidden;
+    opacity: 0;
+    border-bottom-left-radius: 15px; 
+    z-index: 20;
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-height: 90vh;
+    width: 0%;
+    max-width: 30rem;
+    background: radial-gradient(rgba(225, 225, 225,0.3),rgba(225, 225, 225,0.3),rgba(245, 131, 131,0.3)) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out;
+    transition: 1s;
+    padding: 0.5rem;
+}
+.dplinc{
+    min-height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dplinca{
+    color: #fff;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px #fff solid; */
+}
+.dplinca:hover{
+    border: 1px #fff solid;
+    border-radius: 5px;
+    background: radial-gradient(rgba(225, 225, 225,0.1),rgba(225, 225, 225,0.1),rgba(245, 131, 131,0.6));
+}
+/*--Menu Styling End--*/
+.acessories{
+    transition: 0.2s ease-in-out;
+    opacity: 0.2;
+    top: 4rem;
+    right: 1rem;
+    border-radius: 15px;
+    width: 4.5rem;
+    height: 2rem;
+    background: rgba(255, 255, 255,0.2);
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: rgba(245, 131, 131,0.5);
+}
+.acessories:hover{
+    opacity: 1;
+}
+.acessories:active{
+    opacity: 1;
+}
+.acessories .basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.basket a{
+    text-decoration: none;
+    color: #000;
+}
+.acessories .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.basket:hover{
+    cursor: pointer;
+}
+.search:hover{
+    cursor: pointer;
+}
+.smallnot{
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+}
+/*top bar end*/
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(45deg, rgba(196, 196, 247,0.4), rgba(250, 158, 250, 0.5), rgba(247, 181, 192, 0.4), rgba(248, 104, 104,0.2));
+    padding: 5rem 0rem;
+    animation: change 10s infinite;
+    background-size: 400% 400%;
+}   
+.container .perfpro{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 40rem;
+    min-height: 80vh;
+    border-radius: 15px;
+    background: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(0.5px);
+    padding: 0.5rem;
+    margin-top: 3rem;
+}
+.container .perfumesimg{
+    z-index: 1;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    height: 60%;
+    min-width: 12rem;
+}
+.box{
+    font-family: "Roboto", sans-serif;
+    max-width: 11rem;
+    height: 90%;
+    background:rgba(255, 255, 255,0.3);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 800;
+    padding: 0.5rem ,0.5;
+    margin: 1rem 0;
+}
+.box .pimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .pname{
+    padding: 0.2rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+.box .pinfo{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px #000 solid;
+    padding: 0.8px;
+    font-size: 1rem;
+    margin: 1rem;
+}
+.pinfo .pinfos{
+    margin: 0 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pinfo .trolley{
+    text-decoration: none;
+    color: #000;
+}
+.trolley .fas{
+    font-size: 1.2rem;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+footer{
+    font-size: 10px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    height: 2.8rem;
+    width: 100%;
+    background:#e0c6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer span{
+    height: 45%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+footer .span3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.span3 .indi{
+    font-family: "Gruppo", cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: line-through 1px gold;
+    letter-spacing: 1px;
+    
+}
+.backbtn{
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-family: 'Cedarville Cursive', cursive;
+    padding: 0.2rem;
+    border:#fff 1px solid;
+    border-radius: 5px;
+    background: rgba(255, 255, 255,0.3);
+}
+.backbtn:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Cedarville Cursive', cursive;
+    color: #000;
+}
+.menustuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*top bar start*/
+.topbar{
+    z-index: 23;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: rgba(245, 131, 131,0.5);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .tbname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.topbar .menbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: ease-in-out;
+    transition: 0.6s;
+}
+/*--Menu Styling Start--*/
+.menustuff .dropmenu{
+    visibility: hidden;
+    opacity: 0;
+    border-bottom-left-radius: 15px; 
+    z-index: 20;
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-height: 90vh;
+    width: 0%;
+    max-width: 30rem;
+    background: radial-gradient(rgba(225, 225, 225,0.3),rgba(225, 225, 225,0.3),rgba(245, 131, 131,0.3)) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out;
+    transition: 1s;
+    padding: 0.5rem;
+}
+.dplinc{
+    min-height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dplinca{
+    color: #fff;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px #fff solid; */
+}
+.dplinca:hover{
+    border: 1px #fff solid;
+    border-radius: 5px;
+    background: radial-gradient(rgba(225, 225, 225,0.1),rgba(225, 225, 225,0.1),rgba(245, 131, 131,0.6));
+}
+/*--Menu Styling End--*/
+/*top bar end*/
+.container{
+    
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(45deg,rgba(2, 2, 2, 0.5),rgba(126, 32, 32, 0.5), rgba(110, 47, 47,0.3),rgba(216, 192, 125, 0.5), rgba(255, 215, 0, 0.5));
+    padding: 5rem 0rem;
+    animation: change 10s infinite;
+    background-size: 400% 400%;
+}   
+.container .trollpro{
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 15rem;
+    width: 70rem;
+    min-height: 80vh;
+    border-radius: 15px;
+    background: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(0.5px);
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+}
+.container .trollimg{
+    z-index: 1;
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    height: 60%;
+    min-width: 12rem;
+}
+.box{
+    font-family: "Roboto", sans-serif;
+    min-width: 13rem;
+    width: 21rem;
+    height: 90%;
+    background:rgba(255, 255, 255,0);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 800;
+    padding: 0.5rem ,0.5rem;
+    margin: 1rem 0rem;
+}
+.tccont2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    
+}
+.box .pimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+.box .pname{
+    padding: 0.2rem;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+.box .pinfo{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px #000 solid;
+    padding: 0px;
+    font-size: 1rem;
+    margin: 1rem ;
+    max-width: 43rem;
+}
+.pinfosbx{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+.pinfo .pinfos{
+    margin: 0 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pinfosbx .pipe{
+    width: 2px;
+    height: 1.5rem;
+    background: #000;
+}
+.pinfos .qtycalc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    margin: 2px;
+}
+.calci{
+    padding: 0 3px;
+}
+.pinfo .trolley{
+    text-decoration: none;
+    color: #000;
+}
+.pinfo .fas{
+    font-size: 1.2rem;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+footer{
+    font-size: 10px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    height: 2.8rem;
+    width: 100%;
+    background:#e0c6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 12;
+}
+footer span{
+    height: 45%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+footer .span3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.span3 .indi{
+    font-family: "Gruppo", cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: line-through 1px gold;
+    letter-spacing: 1px;
+}
+.checkoutbtn{
+    font-weight: 200;
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    height: 1.8rem;
+    width: auto;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+.checkoutbtn:hover{
+    cursor: pointer;
+}
+.binbt{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.binbt:hover{
+    color: red;
+}
+.trollh{
+    height: 3rem;
+    width: 100%;
+    border-bottom: 1px #000 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+.selector{
+    font-weight: 800;
+}
+.ordsumm{
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.ordh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px #000 solid;
+    padding: 0.3rem;
+    height: fit-content;
+    width: fit-content;
+}
+.ordhh{
+    font-size: 1.3rem;
+    color: #000;
+}
+.ordi{
+    margin: 1rem;
+}
+.ordsummc{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+    max-width: 65rem;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+.ordsumm .button{
+    margin: 2rem;
+    padding: 0px 6px;
+    background: rgba(250, 246, 246,0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordcont{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.sumtot{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 1.5rem;
+    width: 100%;
+    border-bottom: 1px #000 solid;
+    padding: 5px;
+}
+.stinfo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.sumtot .span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ordsumm .button:hover{
+    cursor: pointer;
+}
+.orditem{
+    height: 3.5rem;
+    max-height: 3.5rem;
+    width: 100%;
+    border-bottom: #000 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 1rem;
+    padding-bottom: 1.8rem 0;
+}
+.itimg{
+    height: 2.5rem;
+    padding: 0 2px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.itimg img{
+    min-height: 1.5rem;
+    max-height: 2rem;
+    min-width: 1.5rem;
+    max-width: 2rem;
+}
+.itname{
+    height: 1.5rem;
+    max-height: 3.5rem;
+    padding: 0 2px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: normal;
+}
+
+.itqty{
+    height: 1.5rem;
+    padding: 0 2px;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.itprice{
+    height: 1.5rem;
+    padding: 0 2px;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.itprice sup{
+    font-size: 7px;
+}
+.cross{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.backbtn{
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-family: 'Cedarville Cursive', cursive;
+    padding: 0.2rem;
+    border:#fff 1px solid;
+    border-radius: 5px;
+    background: rgba(255, 255, 255,0.3);
+}
+.backbtn:hover{
+    cursor: pointer;
+}
+.emptbask{
+    margin: 3rem;
+    height: 30rem;
+    width: 65rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px #000 solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+.opbtns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 23rem;
+    height: 6rem;
+}
+.opbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    height: 1.5rem;
+    width: 10rem;
+    border-radius: 5px;
+    background: rgba(255, 255, 255,0.4);
+    padding: 5px;
+}
+.opbtn:hover{
+    cursor: pointer;
+}

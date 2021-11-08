@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self care & Bookings</title>
+    <link rel="stylesheet" href="srvbk.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+    
+  </head>
+  <body>
+    <section class="menustuff">
+      <div class="topbar">
+        <span class="tbname">Réconcilier Di Ladi.</span>
+        <div class="menbtn"><i class="fas fa-bars"></i></div>
+      </div>
+      <div class="acessories">
+        <a href="/index.html" class="search"><i class="fas fa-home"></i></a>
+        <span class="basket"
+          ><a href="/trolley_folder/trolley.html"
+            ><i class="fas fa-shopping-basket"
+              ><span class="smallnot"></span></i></a
+        ></span>
+      </div>
+      <div class="dropmenu" id="drpmenu">
+      <!-- <img src="/images/menu2img.png" alt="" class="drmenuimg"> -->
+      <div class="dplinc">
+        <a href="/index.html" class="dplinca" onclick="mbtnevclo()">Home</a>
+        <a href="/services_folder/service.html" class="dplinca"onclick="mbtnevclo()" >Services</a>
+        <a href="/services_folder/servbk/srvbk.html" class="dplinca"onclick="mbtnevclo()" >Virtual Appointment</a>
+        <a href="/index.html#top-deals" class="dplinca"onclick="mbtnevclo()" >Shop</a>
+        <a href="" class="dplinca" onclick="mbtnevclo()">About</a>
+        <a href="" class="dplinca"onclick="mbtnevclo()">Contact Us</a>
+      </div>
+    </div>
+    </section>
+    <section class="ovcontainer"onclick="mbtnevclo()">
+      <a href="/services_folder/service.html" class="search1"><i class="fas fa-hand-holding-heart"></i></a>
+        <img src="/images/gownimg.png" alt="" class="srvbkimg">
+        <span class="vphd">Virtual Appointment</span>
+        <div class="vpnot"><span class="vpnotsp"><i class="fas fa-exclamation-triangle"></i> You can select a maximum of 1 service per booking</span>
+          <span class="vpnotsp" id="notif"><i class="fas fa-info-circle"></i> Click on service to select your option</span>
+          <span class="vpnotsp dtwarn"> <i class="fas fa-exclamation-circle"></i> Please Enter Valid date and time</span>
+        </div>
+        <div class="packages sep"> 
+        <div class="servcont pit">
+          <div class="servconts" id="servcont1" onclick="selproc(this)">
+              <div class="srvcont1cont">
+              <div class="servcont1head servconthead"><span>Full body message</span></div>
+              <span class="servcont1spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span>
+               
+              </div>
+            </div>
+          <div class="servconts" id="servcont2" onclick="selproc(this)">
+              <div class="srvcont2cont">
+              <div class="servcont2head servconthead"><span>Facial</span></div>
+              <span class="servcont2spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span> 
+              </div>
+          </div>
+          <div class="servconts" id="servcont3" onclick="selproc(this)">
+              <div class="srvcont3cont">
+              <div class="servcont3head servconthead"><span>Padicure & Manicure</span></div>
+              <span class="servcont3spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span> 
+              </div>
+          </div>
+          <div class="servconts" id="servcont4" onclick="selproc(this)">
+              <div class="srvcont4cont">
+              <div class="servcont4head servconthead"><span>Configure</span></div>
+              <span class="servcont4spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span> 
+              </div>
+          </div>
+          <div class="servconts" id="servcont5" onclick="selproc(this)">
+              <div class="srvcont5cont">
+              <div class="servcont5head servconthead"><span>Configure</span></div>
+              <span class="servcont5spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span> 
+              </div>
+          </div>
+          <div class="servconts" id="servcont6" onclick="selproc(this)">
+              <div class="srvcont6cont">
+              <div class="servcont6head servconthead"><span>Configure</span></div>
+              <span class="servcont6spanp srvcsp">Lorem ipsum dolor sit wev rewfr wefrwre jfg jr rggrg</span> 
+              </div>
+          </div>
+          <div class="sltbtn"><input type="datetime-local" class="sltbtnc"></div>
+          <span class="servcontbtn" onclick="pridate()">Book Appointment</span>
+        </div>
+      </div>
+      <div class="flashmsg">
+        <i class="fas fa-times-circle"></i>
+        <i class="fas fa-check-circle fa-5x"></i>
+        <span>Appointment booked</span>
+      </div>
+        </div>
+      <footer>
+        <span>copyright &copy;2021 Reconcilier di Ladi</span>
+        <span class="span3">Built by<span class="indi">Akreczent</span></span>
+      </footer>
+    </section>
+
+   <script src="/services_folder/servbk/srvbk.js"></script> 
+  
+  </body>
+</html>

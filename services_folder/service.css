@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.menustuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*top bar start*/
+.topbar{
+    z-index: 23;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: rgba(245, 131, 131,0.5);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .tbname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.topbar .menbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: ease-in-out;
+    transition: 0.6s;
+}
+/*--Menu Styling Start--*/
+.menustuff .dropmenu{
+    visibility: hidden;
+    opacity: 0;
+    border-bottom-left-radius: 15px; 
+    z-index: 20;
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-height: 90vh;
+    width: 0%;
+    max-width: 30rem;
+    background: radial-gradient(rgba(225, 225, 225,0.3),rgba(225, 225, 225,0.3),rgba(245, 131, 131,0.3)) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out;
+    transition: 1s;
+    padding: 0.5rem;
+}
+.dplinc{
+    min-height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dplinca{
+    color: #fff;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px #fff solid; */
+}
+.dplinca:hover{
+    border: 1px #fff solid;
+    border-radius: 5px;
+    background: radial-gradient(rgba(225, 225, 225,0.1),rgba(225, 225, 225,0.1),rgba(245, 131, 131,0.6));
+}
+/*--Menu Styling End--*/
+.acessories{
+    transition: 0.2s ease-in-out;
+    opacity: 0.2;
+    top: 4rem;
+    right: 1rem;
+    border-radius: 15px;
+    width: 4.5rem;
+    height: 2rem;
+    background: rgba(255, 255, 255,0.2);
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: rgba(245, 131, 131,0.5);
+}
+.acessories:hover{
+    opacity: 1;
+}
+.acessories:active{
+    opacity: 1;
+}
+.acessories .basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.basket a{
+    text-decoration: none;
+    color: #000;
+}
+.acessories .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.basket:hover{
+    cursor: pointer;
+}
+.search:hover{
+    cursor: pointer;
+}
+.smallnot{
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+}
+/*top bar end*/
+/*container-Start*/
+.ovcontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-height:1rem;
+    width: 100%;
+    background: radial-gradient(rgb(241, 183, 232),rgb(241, 137, 241), rgb(128, 178, 235));
+}
+.intrc{
+    width: 100%;
+    min-height: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.intrci{
+    height: 40%;
+    width: 40rem;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+.welcomemsg{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    text-align: center;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    text-align: justify;
+}
+.spanhead{
+    height: 1rem;
+    padding: 1rem;
+    color: #fff;
+    border-bottom: 1px #fff solid;
+    font-size: 1.5rem;
+}
+.welh{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.prvh{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slinfo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.5rem;
+    width: 100%;
+}
+.lpcontent{
+    z-index: 2;
+    min-height: 21rem;
+    min-width: 20rem;
+    border: 15px;
+    border-radius: 15px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
+.hatfaceimg{
+    height: 50%;
+    max-width: 60%;
+    border: 15px;
+    z-index: 2;
+}
+.bottomline{
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bottomline .bline1{
+    background: #fff;
+    height: 0.5px;
+    width: 50%;
+}
+.bl{
+    margin: 1.5%;
+
+}
+.bottomline .blsqaure{
+    height: 0.5rem;
+    width: 0.5rem;
+    background:#fff;
+    transform: rotate(45deg);
+}
+.bottomline .bline2{
+    background: #fff;
+    height: 0.5px;
+    width: 50%;
+}
+.busname{
+    position: absolute;
+    bottom: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+.packages{
+    min-height: 10vh;
+    width: 90%;
+    background: rgba(253, 253, 253,0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: #fff 1px solid;
+
+}
+.pmh{
+    padding: 0.5rem;
+    border-bottom: #fff 1px solid;
+}
+
+.phead{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.pit{
+    margin: 0.5rem 0rem;
+}
+.servcont{
+    min-height: 1rem;
+    min-width: 1rem;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+.servconts{
+    min-width: 5rem;
+    color: #fff;
+    min-height: 8rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    background: rgba(252, 249, 249,0.2);
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.servconthead{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+.servcontbtn{
+    color: #fff;
+    min-width: 7rem;
+    max-width: 10rem;
+    height: 2rem;
+    background: rgba(240, 66, 202, 0.5);
+    border: #fff 1px solid;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.servcontimg{
+    height: 10rem;
+    width: 10rem;
+}
+.servcontbtn:hover{
+    cursor: pointer;
+}
+
+.testimonials{
+    min-height: 15rem;
+    height: 40rem;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.testmbx{
+    position: relative;
+    height: 60%;
+    width: 80%;
+    background: rgba(250, 247, 247,0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: rgba(248, 126, 242, 0.3) 0.7rem inset;
+    outline-offset: 0.1rem;
+}
+.testmbxci{
+    position: absolute;
+    top: -2.8rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(10rem);
+    outline: rgba(248, 126, 242, 0.3) 0.7rem inset;
+    outline-offset: 0.1rem;
+    transform: rotate(225deg);
+    
+}
+.testci{
+    margin: 2.5rem;
+}
+.srvcsp{
+    font-family: "Roboto", sans-serif;
+}
+.testhead{
+    border-bottom: #fff 1px solid;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testspan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+footer{
+    font-size: 10px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    height: 2.8rem;
+    width: 100%;
+    background:#e0c6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer span{
+    height: 45%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+footer .span3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.span3 .indi{
+    font-family: "Gruppo", cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: line-through 1px gold;
+    letter-spacing: 1px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide:hover{
+    cursor: grab;
+}
+.swiper-slide:active{
+    cursor: grabbing;
+}
+.swiper-button-next{
+    --swiper-navigation-size: 24px;
+    --swiper-theme-color: #fff;
+}
+.swiper-button-prev{
+    --swiper-navigation-size: 24px;
+    --swiper-theme-color: #fff;
+}
+.gownimg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fa-home{
+    color: #000;
+}
+.addpbtn{
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: 4;
+}
+.fa-plus{
+    color: #fff;
+}
+.addpbtn:hover{
+    cursor: pointer;
+}
+
+.srvbtncc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

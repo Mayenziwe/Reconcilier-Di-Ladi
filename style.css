@@ -1,0 +1,1055 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+     font-family: 'Cedarville Cursive', cursive;
+    
+}
+
+.menustuff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*top bar start*/
+.topbar{
+    font-family: 'Cedarville Cursive', cursive;
+    z-index: 23;
+    position: fixed;
+    top: 0;
+    height: 5%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 15px;
+    background: rgba(245, 131, 131,0.5);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar .tbname{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+.topbar .menbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: ease-in-out;
+    transition: 0.6s;
+}
+/*--Menu Styling Start--*/
+.menustuff .dropmenu{
+    font-family: 'Cedarville Cursive', cursive;
+    visibility: hidden;
+    opacity: 0;
+    border-bottom-left-radius: 15px; 
+    z-index: 20;
+    top: 0;
+    right: 0;
+    position: fixed;
+    min-height: 90vh;
+    width: 0%;
+    max-width: 30rem;
+    background: radial-gradient(rgba(225, 225, 225,0.3),rgba(225, 225, 225,0.3),rgba(245, 131, 131,0.3)) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out;
+    transition: 1s;
+    padding: 0.5rem;
+}
+.dplinc{
+    min-height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dplinca{
+    color: #fff;
+    padding: 0.2rem;
+    margin: 0.5rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px #fff solid; */
+}
+.dplinca:hover{
+    border: 1px #fff solid;
+    border-radius: 5px;
+    background: radial-gradient(rgba(225, 225, 225,0.1),rgba(225, 225, 225,0.1),rgba(245, 131, 131,0.6));
+}
+/*--Menu Styling End--*/
+/* .dropmenu .drmenuimg{
+    position: absolute;
+    height: 30rem;
+    width: 15rem;
+    max-width: 35rem;
+
+} */
+.acessories{
+    transition: 0.2s ease-in-out;
+    opacity: 0.2;
+    top: 4rem;
+    right: 1rem;
+    border-radius: 15px;
+    width: 4.5rem;
+    height: 2rem;
+    background: rgba(255, 255, 255,0.2);
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: rgba(245, 131, 131,0.5);
+}
+.acessories:hover{
+    opacity: 1;
+}
+.acessories:active{
+    opacity: 1;
+}
+.acessories .basket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.basket a{
+    text-decoration: none;
+    color: #000;
+}
+.acessories .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.basket:hover{
+    cursor: pointer;
+}
+.search:hover{
+    cursor: pointer;
+}
+.smallnot{
+    visibility: hidden;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: red;
+}
+/*top bar end*/
+/*lpage start*/
+.lpage{
+    height: 100vh;
+    width: 100%;
+    background:#f9f2ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.lpage .lpcontent{
+    z-index: 2;
+    height: 50%;
+    width: 70%;
+    border: 15px;
+    background: rgba(255, 255, 255,0.2);
+    border-radius: 15px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    border: #fff 1px solid;
+    
+}
+.lpage img{
+    height: 50%;
+    max-width: 60%;
+    border: 15px;
+    z-index: 2;
+}
+.pcircle1{
+    z-index: 0;
+    position: absolute;
+    bottom: 29%;
+    left: 52%;
+    height: 20%;
+    min-width: 5rem;
+    max-width: 8rem;
+    background:#c88851;
+    border-radius: 30% 70% 68% 32% / 30% 30% 70% 70%;
+}
+.pcircle2{
+    z-index: 0;
+    position: absolute;
+    height: 30%;
+    min-width: 10rem;
+    max-width: 12rem;
+    background:#ffcccc;
+    border-radius:82% 18% 76% 24% / 68% 21% 79% 32%  ;
+}
+.bottomline{
+    position: absolute;
+    bottom: 10%;
+    width: 60%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomline .bline1{
+    background: #000;
+    height: 1px;
+    width: 30%;
+}
+.bl{
+    margin: 1.5%;
+
+}
+.bottomline .blsqaure{
+    height: 0.5rem;
+    width: 0.5rem;
+    background: #000;
+    transform: rotate(45deg);
+}
+.bottomline .bline2{
+    background: #000;
+    height: 1px;
+    width: 30%;
+}
+.busname{
+    position: absolute;
+    bottom: 5%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.lpbcircle{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height:50%;
+    width: 25rem;
+    background: #cce6ff;
+    border-radius:71% 29% 44% 56% / 49% 20% 80% 51%;
+}
+.circleart{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleart .circleart1{
+    height: 80%;
+    width: 80%;
+    border: 2px #fff solid;
+    border-radius: 65% 35% 50% 50% / 42% 20% 80% 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleart1 .circleart2{
+    height: 80%;
+    width: 80%;
+    border: 2px #fff solid;
+    border-radius: 65% 35% 50% 50% / 42% 20% 80% 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleart2 .circleart3{
+    height: 80%;
+    width: 80%;
+    border: 2px #fff solid;
+    border-radius: 65% 35% 50% 50% / 42% 20% 80% 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleart3 .circleart4{
+    height: 80%;
+    width: 80%;
+    border: 2px #fff solid;
+    border-radius: 65% 35% 50% 50% / 42% 20% 80% 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleart4 .circleart5{
+    height: 80%;
+    width: 80%;
+    border: 2px #fff solid;
+    border-radius: 65% 35% 50% 50% / 42% 20% 80% 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*lpage end*/
+/*top deals page*/
+.top-deals{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#f9f2ec,#ffffe6);
+    position: relative;
+}
+.top-deals h1{
+    z-index: 1;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    color: #fff;
+    font-size: 4rem;
+}
+.top-deals .flower3{
+    z-index: 1;
+    position: absolute;
+    height: 65%;
+    width: 19rem;
+    bottom: 0;
+    left: 0;
+    
+}
+.top-deals .imgcircle{
+    z-index: 0;
+    position: absolute;
+    bottom: 12rem;
+    left: 4%;
+    height: 20%;
+    width: 15rem;
+    background: rgba(106, 248, 106,0.3);
+    border-radius:47% 53% 74% 26% / 71% 50% 50% 29%;
+}
+.top-deals .iscircle{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    z-index: 0;
+    height: 10rem;
+    width:15rem;
+    border-radius: 53% 47% 50% 50% / 75% 65% 35% 25%;
+    background: rgb(44, 44, 44);
+}
+.tdtag{
+    font-size: 120%;
+    font-weight: 800;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    color: #000;
+}
+.top-deals .tdcontainer{
+    z-index: 2;
+    background: rgba(159, 247, 239, 0.3);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    min-height: 50%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.tdcontainer .box{
+    font-family: "Roboto", sans-serif;
+    z-index: 3;
+    max-width: 13rem;
+    height: 90%;
+    background:rgba(255, 255, 255,0.7); 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-weight: 800;
+    padding: 0 0.5rem;
+
+}
+.box .pimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .pname{
+    font-weight: 800;
+    
+}
+.box .pinfo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px #000 solid;
+    padding: 1px;
+    font-size: 1rem;
+    margin: 1rem;
+}
+.pinfo .pinfos{
+    margin: 0 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.pinfo .trolley{
+    text-decoration: none;
+    color: #000;
+}
+.trolley .fas{
+    font-size: 1.2rem;
+}
+.top-deals .delivery{
+    min-height: 20%;
+    width: 95%;
+    z-index: 2;
+    background: rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    position: relative;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.delivery .dspan1{
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    word-wrap: normal;
+    width: 50%;
+    
+}
+.delivery .dspan2{
+    font-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    word-wrap: normal;
+    width: 50%;
+
+}
+.tdcs{
+    margin: 3rem 0rem;
+}
+
+.tdcircleart{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 25%;
+    width: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tdcircleart .tdcircleart1{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffddcc solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tdcircleart1 .tdcircleart2{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffddcc solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tdcircleart2 .tdcircleart3{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffddcc solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tdcircleart3 .tdcircleart4{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffddcc solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tdcircleart4 .tdcircleart5{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffddcc solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*top deals page*/
+/*Perfume start*/
+.perfume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#ffffe6,#ffd9b3);
+    position: relative;
+    padding: 1rem;
+}
+.perfumecont{
+    z-index: 2;
+    background: linear-gradient(45deg, rgba(196, 196, 247,0.4), rgba(250, 158, 250, 0.5), rgba(247, 181, 192, 0.4), rgba(248, 104, 104,0.2));
+    background-size: 400% 400%;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    min-height: 60%;
+    min-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    animation: change 10s ease-in-out infinite;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.perfumecont .prodc{
+    min-height: 1rem;
+    min-width: 1rem;
+    border-radius: 65% 35% 57% 43% / 37% 30% 70% 63%;
+    background: #e6ccff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+.perfumecont .prodc2{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 65% 35% 57% 43% / 37% 30% 70% 63%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.perfumecont span{
+    font-size: 1.5rem;
+    bottom: 4.5%;
+    padding: 0 1rem;
+}
+.perfume .img1{
+    z-index: 1;
+    position: absolute;
+    max-height: 25rem;
+    max-width: 20rem;
+    top: 0;
+    left: 0;
+}
+
+.perfume .fccircle1{
+    z-index: 0;
+    position: absolute;
+    background: #fd88c3;
+    left: 0;
+    margin-left: 2rem;
+    top: 5rem;
+    height: 13rem;
+    width: 13rem;
+    border-radius:26% 74% 50% 50% / 75% 74% 26% 25%;
+}
+.perfume .fccircle2{
+    z-index: 0;
+    position: absolute;
+    background: rgb(247, 92, 92);
+    left: 0;
+    margin-left: 9.0rem;
+    top: 11rem;
+    height: 3rem;
+    width: 4rem;
+    border-radius:53% 47% 46% 54% / 77% 76% 24% 23% ;
+}
+
+.perfume h1{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    color: #e6ccff;
+    font-size: 5rem;
+}
+/*Perfume End*/
+/*Cosmetics Start*/
+.cosmetics{
+    min-height: 2vh;
+    width: 100%;
+    background: linear-gradient(#ffd9b3,#ff9999);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3rem 1rem;
+
+}
+.ccontainers{
+    z-index: 2;
+    margin: 2rem 0;
+    background: rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(1px);
+}
+.ccontainer1{
+    min-height: 30%;
+    min-width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: change 10s ease-in-out infinite;
+    padding: 2rem;
+    color: #fff;
+    background: linear-gradient(45deg,rgba(2, 2, 2, 0.5),rgba(126, 32, 32, 0.5), rgba(110, 47, 47,0.3),rgba(216, 192, 125, 0.5), rgba(255, 215, 0, 0.5));
+    background-size: 400% 400%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.ccontainer1 .cc1pd{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 67% 33% 86% 14% / 86% 35% 65% 14%;
+    background: rgba(243, 246, 247, 0.822);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+.cc1pd .ccpd2{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 67% 33% 86% 14% / 86% 35% 65% 14%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccontainer1 span{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+.ccontainer2{ 
+    height: 20%;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: change 10s ease-in-out infinite;
+    padding: 2rem 1rem;
+    color: #fff;
+    background: linear-gradient(135deg,rgba(243, 56, 243, 0.4), rgba(241, 241, 51, 0.5), rgba(247, 177, 47, 0.5), rgba(241, 66, 66, 0.5));
+    background-size: 400% 400%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.ccontainer2 .cc2pd{
+    height: 11rem;
+    width: 11rem;
+    border-radius: 71% 29% 32% 68% / 52% 46% 54% 48% ;
+    background: rgba(247, 244, 247, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+.cc2pd .ccpd2{
+    height: 11rem;
+    width: 11rem;
+    border-radius:71% 29% 32% 68% / 52% 46% 54% 48%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccontainer2 span{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+.ccontainer3{
+    height: 30%;
+    width: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: change 10s ease-in-out infinite;
+    padding: 2rem;
+    color: #fff;
+    background: linear-gradient(45deg,rgba(124, 208, 241,0.5), rgba(117, 245, 117, 0.5), rgba(248, 248, 93,0.5), rgba(247, 197, 106,0.5));
+    background-size: 400% 400%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.ccontainer3 .cc3pd{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50% 50% 50% 50% / 75% 77% 23% 25%;
+    background: rgba(226, 222, 221, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+.cc3pd .ccpd3{
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50% 50% 50% 50% / 75% 77% 23% 25%;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ccontainer3 span{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+.cosmetics h1{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-size: 4rem;
+
+}
+.cosmetics .imghandface{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+    top: 0rem;
+    height: 15rem;
+    width: 20rem;
+}
+.cosmetics .handfacecircle1{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    margin-top: 2rem;
+    top: 0rem;
+    height: 10rem;
+    width: 13rem;
+    background: #fff;
+    border-radius: 57% 43% 77% 23% / 48% 30% 70% 52%;
+}
+.cosmetics .cosflowerimg{
+    z-index: 1;
+    position: absolute;
+    margin-top: 2rem;
+    top:15%;
+    left: 0;
+    max-height: 25rem;
+    max-width: 25rem;
+}
+
+.cosmetics .cosfcircle2{
+    z-index: 0;
+    position: absolute;
+    margin-top: 2rem;
+    top:25%;
+    left: 5rem;
+    height: 9%;
+    width: 9rem;
+    background: #f78f8f;
+    border-radius:40% 60% 69% 31% / 58% 10% 90% 42% ;
+
+}
+.cosmetics .handfacecircle2{
+    z-index: 0;
+    position: absolute;
+    right: 9rem;
+    margin-top:2rem;
+    top: 8rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background:pink;
+    border-radius:21% 79% 19% 81% / 28% 69% 31% 72%;
+
+}
+.cosmetics .cosmcircleart{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    height: 15%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .cosmcircleart1{
+    height: 80%;
+    width: 80%;
+    border: 2px #cce6ff solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .cosmcircleart2{
+    height: 80%;
+    width: 80%;
+    border: 2px #cce6ff solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .cosmcircleart3{
+    height: 80%;
+    width: 80%;
+    border: 2px #cce6ff solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .cosmcircleart4{
+    height: 80%;
+    width: 80%;
+    border: 2px #cce6ff solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .cosmcircleart5{
+    height: 80%;
+    width: 80%;
+    border: 2px #cce6ff solid;
+    border-radius: 75% 25% 79% 21% / 47% 25% 75% 53%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cosmetics .handsfaceimg{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    margin-bottom: 3rem;
+    bottom: 0;
+    max-height: 25rem;
+    max-width: 20rem;
+}
+.cosmetics .handscircle1{
+    z-index: 0;
+    position: absolute;
+    left: 8rem;
+    margin-top:2rem;
+    bottom: 3rem;
+    height: 9rem;
+    width: 9rem;
+    background:rgb(255, 231, 209);
+    border-radius:75% 25% 68% 32% / 58% 24% 76% 42%;
+    transform: rotate(210deg);
+}
+.cosmetics .lascircleart2{
+    z-index: 0;
+    position: absolute;
+    bottom: 14rem;
+    height: 20%;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lascircleart2 .lascosmcircleart1{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffb3d1  solid;
+    border-radius: 47% 53% 42% 58% / 59% 75% 25% 41% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lascircleart2 .lascosmcircleart2{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffb3d1 solid;
+    border-radius: 47% 53% 42% 58% / 59% 75% 25% 41%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lascircleart2 .lascosmcircleart3{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffb3d1 solid;
+    border-radius: 47% 53% 42% 58% / 59% 75% 25% 41% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lascircleart2 .lascosmcircleart4{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffb3d1 solid;
+    border-radius: 47% 53% 42% 58% / 59% 75% 25% 41% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lascircleart2 .lascosmcircleart5{
+    height: 80%;
+    width: 80%;
+    border: 2px #ffb3d1 solid;
+    border-radius: 47% 53% 42% 58% / 59% 75% 25% 41% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 10px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    height: 2.8rem;
+    width: 100%;
+    background:#e0c6f8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer span{
+    height: 45%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+footer .span3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.span3 .indi{
+    font-family: "Gruppo", cursive;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: line-through 1px gold;
+    letter-spacing: 1px;
+    
+}
+/*Cosmetics End*/
+.swiper {
+  width: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-button-next{
+    visibility: hidden;
+    
+}
+.swiper-button-prev{
+    visibility: hidden;
+}
+
+.fa-hand-holding-heart{
+    color: #000;
+}
